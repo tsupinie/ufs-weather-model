@@ -72,7 +72,6 @@ export LIST_FILES="atmos_4xdaily.tile1.nc \
                    RESTART/sfc_data.tile6.nc"
 
 export_fv3
-export NODES=$(expr $TASKS / $TPN + 1)
 
 export DT_ATMOS="600"
 export IMP_PHYSICS=8
@@ -83,7 +82,6 @@ export LTAEROSOL=.T.
 
 export FV3_RUN=ccpp_gsd_run.IN
 export CCPP_SUITE=FV3_GFS_v15_gf_thompson
-export CCPP_LIB_DIR=ccpp/lib
 export INPUT_NML=ccpp_gsd.nml.IN
 
 export HYBEDMF=.T.
@@ -91,4 +89,3 @@ export DO_MYNNEDMF=.F.
 export IMFSHALCNV=3
 export IMFDEEPCNV=3
 
-RUN_SCRIPT=rt_fv3.sh
